@@ -263,9 +263,10 @@ ln -s 生成软链接
 
 **yum在线管理**
 
-yum search 包名, 查抄可用包
+- yum search 包名, 查抄可用包
 
-yum -y install 包名, 安装包
+- yum -y install 包名, 安装包
+
 
 ------
 
