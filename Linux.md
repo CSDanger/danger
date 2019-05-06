@@ -7,6 +7,9 @@
 - ls -i, **显示文件的inode节点信息**
 - ls -d, **显示一个目录的详细信息,不是目录下的文件信息**
 - ls -h, **人性化显示文件信息,例如所占空间转化成K**
+-  使用 mount  -t vmhgfs .host:/share /mnt/hgfs  命令挂载该共享文件夹(注意：带.号的哦)，其中.host:/Documents是共享名，只需把Documents换成使用vmware-hgfsclient 命令得到的目录，/mnt/hgfs是挂载点
+- 如果显示 Error: cannot mount filesystem: No such device   **centos7先执行 yum install open-vm-tools然后再执行vmhgfs-fuse .host:/ /mnt/hgfs**
+- vmhgfs-fuse  .host:/  /mnt/hgfs,  **挂载共享文件**，**每次启动需要重新执行这个命令**.
 
 
 
